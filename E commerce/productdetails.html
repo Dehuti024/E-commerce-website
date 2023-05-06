@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details-Jumaa</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="Container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="Images/logop.png" width="100px" />
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img src="Images/shopping-cart-icon.png" width="25px" height="25px" />
+        <img src="Images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!------------------single product details-------------->
+    <div class="small-container single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="Images/p1.jpg" width="100%" />
+        </div>
+        <div class="col2">
+          <p>Home / T-shirt</p>
+          <h1>Red oversized T-shirt by HRX</h1>
+          <h4>₹899</h4>
+          <select>
+            <option>Select Size</option>
+            <option>XL</option>
+            <option>L</option>
+            <option>M</option>
+          </select>
+          <input type="number" value="1" />
+          <a href="" class="btn">Add to cart</a>
+          <h3>Product Details<i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, veniam laboriosam, sunt deserunt explicabo natus
+            commodi exercitationem aperiam dolorem nisi id optio sed tempora
+            iusto repudiandae inventore iure accusantium. Nam!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="Images/p1.jpg" />
+          <h4>Red oversized T-shirt</h4>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <i class="fa fa-star-half-o"></i>
+          <p>₹899</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/p2.jpg" />
+          <h4>Printed blue heels</h4>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+          <p>₹1399</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/p5.jpg" />
+          <h4>White brown Shoe</h4>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <p>₹1999</p>
+        </div>
+        <div class="col-4">
+          <img src="Images/p4.jpg" />
+          <h4>Blue jeans for men</h4>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <i class="fa fa-star-o"></i>
+          <p>₹999</p>
+        </div>
+      </div>
+    </div>
+    <!------------------------footer------------------------------>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="Images/applogo.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="Images/logop.png" />
+            <p>
+              Our purpose is to Sustainably Make the pleasure and Benefits of
+              sports accessible to many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Usefull links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023- Dehuti Baheti</p>
+      </div>
+    </div>
+
+    <!---------js for toggle menu----------->
+    <script>
+      var menuitems = document.getElementsById("menuitems");
+      menuitems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
